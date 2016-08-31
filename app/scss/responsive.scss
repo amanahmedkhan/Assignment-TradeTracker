@@ -1,0 +1,68 @@
+/********************
+--- Responsive Start CSS ---
+*********************/
+	@media (min-width:1280px){
+		.container{width:1280px;}
+	}
+
+	@media (max-width:991px){
+		header{text-align:center; padding:15px 0; line-height:normal; 
+			.logo{margin-bottom:12px;}
+			.infoDetail{text-align:center;
+				 ul{
+				 	li{border:none;
+				 		&:last-child{padding-right:12px;}
+				 		a{padding:7px 0;}
+				 	}
+				 }
+			}
+		}
+
+		.searchForm{text-align:center;
+			h3{padding:0 0 9px;}
+			.form-group{padding:0; margin-bottom:8px;
+				&:last-child{margin:0;}
+			}
+		}
+
+		.products{
+			.productList{
+				.item{min-height:inherit;
+					figure{
+						img{height:230px;}
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width:767px){
+		h2{font-size:18px;}
+		h3{font-size:18px;}
+		h4{font-size:16px;}
+		input{font-size:1.0em;}
+		.error h2{font-size:18px;}
+		
+		.searchForm{padding:15px 0;}
+
+		.banner{
+			figure{height:inherit;}
+		}
+		
+		.products{padding:12px 0;
+			.productList{
+				article{margin-bottom:18px;
+					.item{
+						a{
+							figure{
+								img{height:auto; object-fit:auto;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+/********************
+--- Responsive End CSS ---
+*********************/

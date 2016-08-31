@@ -1,0 +1,69 @@
+/********************
+--- Search Form Module CSS ---
+*********************/
+.searchForm { border-bottom: 1px solid; padding: 20px 0; }
+.searchForm h3 { padding: 9px 0; margin: 0; }
+.searchForm form { padding: 0; }
+.searchForm form .form-group:last-child { padding: 0; }
+
+/********************
+--- Search Form Module CSS ---
+*********************/
+/********************
+--- Product Banner Module CSS ---
+*********************/
+.banner { display: inline-block; overflow: hidden; }
+.banner img { height: auto; }
+.banner h2 { margin: 0; text-align: center; text-transform: uppercase; }
+.banner figure { position: relative; height: 200px; }
+.banner figure figcaption { position: absolute; top: 50%; width: 100%; }
+
+/********************
+--- Product Banner Module CSS ---
+*********************/
+/********************
+--- Product List Module CSS ---
+*********************/
+.products { padding: 20px 0; }
+.products .productList { padding: 0; }
+.products .productList article { text-align: center; margin-bottom: 24px; }
+.products .productList .item { display: block; border: 1px solid; cursor: pointer; border-radius: 2px; min-height: 400px; overflow: hidden; }
+.products .productList .item h4 { margin-bottom: 10px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; }
+.products .productList .item p { margin-bottom: 15px; font-size: 15px; overflow: hidden; text-overflow: ellipsis; max-height: 40px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.products .productList .item figure { overflow: hidden; position: relative; }
+.products .productList .item figure img { height: 320px; object-fit: cover; }
+.products .productList .item figure figcaption { position: absolute; left: 0; top: 0; opacity: 0; visibility: hidden; width: 100%; height: 100%; }
+.products .productList .item figure figcaption .overInfo { position: absolute; left: 0; top: 50%; width: 100%; padding: 20px; }
+.products .productList .item figure figcaption .overInfo a { margin-bottom: 5px; font-size: 15px; display: inline-block; width: 100%; }
+.products .productList .item .price { font-weight: 500; }
+.products .productList .item .detail { padding: 15px; border-top: 1px solid; overflow: hidden; position: relative; }
+.products .productList .item .addCart { position: absolute; left: 0; bottom: -100%; width: 100%; padding: 20px 0; }
+.products .productList .item:hover .addCart, .products .productList .item:focus .addCart { bottom: 0; }
+.products .productList .item:hover figure figcaption, .products .productList .item:focus figure figcaption { opacity: 1; visibility: visible; }
+
+/********************
+--- Product List Module CSS ---
+*********************/
+/********************
+--- Search Result Input CSS ---
+*********************/
+.error { position: absolute; text-align: center; left: 0; top: 0; width: 100%; height: 100%; font-size: 24px; z-index: 1; }
+.error h2 { font-size: 22px; padding: 15px 0; }
+
+.loader { position: absolute; text-align: center; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; }
+.loader .loadInner { position: absolute; left: 50%; top: 10px; }
+.loader .loadInner .loadIcon { border: 3px solid; border-top: 3px solid; border-radius: 50%; width: 50px; height: 50px; -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; }
+
+/********************
+--- Search Result Input CSS ---
+*********************/
+/********************
+--- Animation KeyFrame ---
+*********************/
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); } }
+/********************
+--- Animation KeyFrame ---
+*********************/

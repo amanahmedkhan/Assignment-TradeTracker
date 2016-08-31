@@ -1,0 +1,54 @@
+.lightBlackbg { background: #282828; }
+
+body { background: #FFFFFF; }
+
+a { color: #d8d8d8; }
+a:hover, a:focus { color: #d8d8d8; }
+
+header .infoDetail ul li { border-color: #505050; }
+header a { -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+header a:hover { color: #f7712c; }
+
+h2 { color: #273154; }
+
+h3 { color: #273154; }
+
+h4 { color: #282828; }
+
+p { color: #505050; }
+
+span { color: #505050; }
+
+input.form-control { border-color: #d8d8d8; background: #f5f5f5; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+input.form-control:focus { border-color: #273154; background: #FFFFFF; }
+
+.error { background: #FFFFFF; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.error h2 { background: #f5f5f5; }
+
+.loader { background: #FFFFFF; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.loader .loadInner { -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+.loader .loadInner .loadIcon { border-color: #d0d0d0; border-top-color: #273154; }
+
+.btn { -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+
+.btn-default { background: #273154; color: #FFFFFF; border-color: #273154; }
+.btn-default:hover, .btn-default:focus { background: transparent; color: #273154; border-color: #273154; }
+
+.btn-icon { background: #f7712c; color: #FFFFFF; border-color: #f7712c; }
+.btn-icon:hover, .btn-icon:focus { background: #f7712c; color: #FFFFFF; border-color: #f7712c; }
+
+.searchForm { border-color: #f5f5f5; background: #FDFDFD; }
+
+.banner h2 { color: #FFFFFF; }
+.banner figure figcaption { -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.products .productList .item { background: #FFFFFF; border-color: #d8d8d8; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
+.products .productList .item h4 { color: #505050; }
+.products .productList .item a { color: #FFFFFF; }
+.products .productList .item p { color: #FFFFFF; }
+.products .productList .item figure figcaption { background: rgba(0, 0, 0, 0.6); -moz-transition: all 0.9s ease; -o-transition: all 0.9s ease; -webkit-transition: all 0.9s ease; transition: all 0.9s ease; }
+.products .productList .item figure figcaption .overInfo { -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.products .productList .item .price { color: #f7712c; }
+.products .productList .item .addCart { -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; background: rgba(255, 255, 255, 0.8); }
+.products .productList .item .detail { -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; border-color: #d8d8d8; background: #FFFFFF; }
+.products .productList .item:hover { -moz-box-shadow: rgba(80, 80, 80, 0.2) 0 0 8px; -webkit-box-shadow: rgba(80, 80, 80, 0.2) 0 0 8px; box-shadow: rgba(80, 80, 80, 0.2) 0 0 8px; }

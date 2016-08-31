@@ -1,0 +1,109 @@
+@import "compass/css3";
+@import "compass/css3/transform";
+
+// Theme Colors Start
+	$colorDefault:#000;
+	$colorLightDefault:#282828;
+	$colorWhite:#FFFFFF;
+	$colorLightWhite:#FDFDFD;
+	$colorGray:#d8d8d8;
+	$colorLightGray:#f5f5f5;
+	$colorDrakGray:#505050;
+	$colorOrange:#f7712c;
+	$colorBlue:#273154;
+// Theme Colors End
+
+// Colors & Background Start
+	.lightBlackbg{background:$colorLightDefault;}
+// Colors & Background End
+
+// Base Theme Start
+	body{background:$colorWhite;}
+	a{color:$colorGray;
+		&:hover,&:focus{color:$colorGray;}
+	}
+// Base Theme End
+
+// Layout Start
+	header{
+		.infoDetail{
+			ul{
+				li{border-color:$colorDrakGray;}	
+			}
+		}
+		a{@include transition(all ease 0.5s);
+			&:hover{color:$colorOrange;}
+		}
+	}
+// Layout End
+
+// Start Typography CSS
+	h2{color:$colorBlue;}
+	h3{color:$colorBlue;}
+	h4{color:$colorLightDefault;}
+	p{color:$colorDrakGray;}
+	span{color:$colorDrakGray;}
+// End Typography CSS
+
+// Start Forms CSS
+	input.form-control{border-color:$colorGray; background:$colorLightGray; @include transition(all ease 0.5s);
+		&:focus{border-color:$colorBlue; background:$colorWhite;}
+	}
+// End Forms CSS
+
+// Start Search Message
+	.error{background:$colorWhite; @include transition(all ease 0.5s);
+		h2{background:$colorLightGray;}
+	}
+
+	.loader{background:$colorWhite; @include transition(all ease 0.5s);
+		.loadInner{@include transform(translateX(-50%));
+			.loadIcon{border-color:#d0d0d0; border-top-color:$colorBlue;}
+		}
+	}
+// Start Search Message
+
+// Start Button CSS
+	.btn{@include transition(all ease 0.5s);}
+	.btn-default{background:$colorBlue; color:$colorWhite; border-color:$colorBlue;
+		&:hover,&:focus{background:transparent; color:$colorBlue; border-color:$colorBlue;}
+	}
+	.btn-icon{background:$colorOrange; color:$colorWhite; border-color:$colorOrange;
+		&:hover,&:focus{background:$colorOrange; color:$colorWhite; border-color:$colorOrange;}
+	}
+// Start Button CSS
+
+// Modules Theme Start
+	// Search Form
+	.searchForm{border-color:$colorLightGray; background:$colorLightWhite;}
+	
+	// Banner
+	.banner{
+		h2{color:$colorWhite;}
+		figure{
+			figcaption{@include transform(translateY(-50%));}
+		}
+	}
+
+	// Product List
+	.products{
+		.productList{
+			.item{background:$colorWhite; border-color:$colorGray; @include transition(all ease 0.5s);
+				h4{color:$colorDrakGray;}
+				a{color:$colorWhite;}
+				p{color:$colorWhite;}
+				figure{
+					figcaption{background:rgba($colorDefault, 0.6); @include transition(all ease 0.9s);
+						.overInfo{@include transform(translateY(-50%));}
+					}
+				}
+				.price{color:$colorOrange;}
+				.addCart{@include transition(all ease 0.5s); background:rgba($colorWhite, 0.8);}
+				.detail{@include transition(all ease 0.5s); border-color:$colorGray; background:$colorWhite;}
+				&:hover{@include box-shadow(rgba($colorDrakGray, 0.2) 0 0 8px);}
+			}
+		}
+	}
+// Modules Theme End
+
+

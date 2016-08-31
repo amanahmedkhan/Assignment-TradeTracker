@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Assignment:tradetracker</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<!-- Start Verders CSS -->
+			<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/main.css">
+		<!-- End Verders CSS -->
+	</head>
+	<body ng-app="mainApp">
+		<main>
+			<!-- Header Start -->
+				<header class="lightBlackbg">
+					<div class="container">
+						<div class="col-md-3 col-sm-12 logo">
+							<a href="javascript:;">
+								LOGO
+							</a>
+						</div>
+						<div class="col-md-9 col-sm-12 infoDetail">
+							<ul class="list-inline">
+								<li><a href="javascript:;">Need help? Call us at 009-65887140</a></li>
+								<li><a href="javascript:;">Lorem ipsum dolor sit amet.</a></li>
+								<li><a href="javascript:;">Lorem ipsum dolor sit amet.</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+			<!-- Header End -->
+			<ng-view></ng-view>
+			<!-- ngTemplate Start -->
+				<script type="text/ng-template" id="index.html">
+					<!-- Product Controller Start -->
+						<section ng-controller="ProductCtrl" id="viewLayer">
+							<!-- Search Start -->
+								<div class="col-xs-12 searchForm">
+									<section class="container">
+										<h3 class="col-md-2 col-sm-12">Product Search..</h3>
+										<form  class="col-md-10 col-sm-12" name="myForm" ng-submit="searchProduct(productURL)">
+											<div class="form-group col-md-10 col-sm-12">
+												<input type="text" class="form-control" ng-model="productURL" placeholder="Type your URL here.">
+											</div>
+											<div class="form-group col-md-2 col-sm-12">
+												<button type="submit" class="btn btn-default fullWidth">Search</button>
+											</div>
+										</form>
+									</section>
+								</div>
+							<!-- Search End -->
+
+							<!-- Banner Start -->
+								<div class="banner">
+									<figure>
+										<img src="images/banner.jpg" class="fullWidth" alt="banner">
+										<figcaption>
+											<h2>Our Products</h2>
+										</figcaption>
+									</figure>
+								</div>
+							<!-- Banner Start -->
+
+							<!-- Products List Start -->
+								<div class="container products">
+			    					<div class="col-xs-12 productList">
+										<!-- Start Loader -->
+											<div class="loader" ng-show="loader">
+												<div class="loadInner">
+													<div class="loadIcon"></div>
+												</div>
+											</div>
+										<!-- End Loader -->
+
+										<!-- Start Error -->
+											<div class="error" ng-show="statusVisibility">
+												<h2>{{status}}</h2>
+											</div>
+										<!-- End Error -->
+
+										<!-- Start Items -->
+				    						<article class="col-md-3 col-sm-4 col-xs-12" ng-repeat="product in products">
+				    							<div class="item">
+				    								<figure>
+				    									<img class="fullWidth" src="{{product.imageURL}}" alt="productImage">
+				    									<figcaption>
+				    										<div class="overInfo">
+				    											<p class="dics">{{product.description}}</p>
+																<a href="javascript:;">Category: {{product.categories.category.__text}}</a>
+																<a href="javascript:;">ID: {{product.productID}}</a>
+															</div>
+				    									</figcaption>
+				    								</figure>
+				    								<div class="detail">
+				    									<a href="{{product.productURL}}"><h4>{{product.name}}</h4></a>
+				    									<span class="price">{{product.price._currency}} {{product.price.__text}}</span>
+				    									<div class="addCart">
+				    										<a href="{{product.productURL}}" class="btn btn-icon">ADD TO CART <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+				    									</div>
+				    								</div>
+				    							</div>
+				    						</article>
+			    						<!-- Start Items -->
+			    					</div>
+					 			</div>
+				 			<!-- Products List End -->
+			 			</section>
+			 		<!-- Product Controller End -->
+				</script>
+			<!-- ngTemplate End -->
+		</main>
+		<!-- Start Verders JS -->
+			<script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+			<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+			<script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
+			<script type="text/javascript" src="/app/js/app.js"></script>
+			<script type="text/javascript" src="/app/js/controllers/productCtrl.js"></script>
+			<script type="text/javascript" src="/app/js/xml2json.min.js"></script>
+		<!-- End Verders JS -->
+	</body>
+</html>

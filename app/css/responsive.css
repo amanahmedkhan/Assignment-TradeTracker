@@ -1,0 +1,29 @@
+/********************
+--- Responsive Start CSS ---
+*********************/
+@media (min-width: 1280px) { .container { width: 1280px; } }
+@media (max-width: 991px) { header { text-align: center; padding: 15px 0; line-height: normal; }
+  header .logo { margin-bottom: 12px; }
+  header .infoDetail { text-align: center; }
+  header .infoDetail ul li { border: none; }
+  header .infoDetail ul li:last-child { padding-right: 12px; }
+  header .infoDetail ul li a { padding: 7px 0; }
+  .searchForm { text-align: center; }
+  .searchForm h3 { padding: 0 0 9px; }
+  .searchForm .form-group { padding: 0; margin-bottom: 8px; }
+  .searchForm .form-group:last-child { margin: 0; }
+  .products .productList .item { min-height: inherit; }
+  .products .productList .item figure img { height: 230px; } }
+@media (max-width: 767px) { h2 { font-size: 18px; }
+  h3 { font-size: 18px; }
+  h4 { font-size: 16px; }
+  input { font-size: 1.0em; }
+  .error h2 { font-size: 18px; }
+  .searchForm { padding: 15px 0; }
+  .banner figure { height: inherit; }
+  .products { padding: 12px 0; }
+  .products .productList article { margin-bottom: 18px; }
+  .products .productList article .item a figure img { height: auto; object-fit: auto; } }
+/********************
+--- Responsive End CSS ---
+*********************/
