@@ -4,7 +4,7 @@
 
 ## Install:
 
-Download attached File or git clone
+Download attached File or `git clone`
 
 install npm from command line
 
