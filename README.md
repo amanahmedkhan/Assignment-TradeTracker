@@ -1,5 +1,4 @@
-
-#Assignment
+TradeTracker Assignment
 
 
 ## Install:
